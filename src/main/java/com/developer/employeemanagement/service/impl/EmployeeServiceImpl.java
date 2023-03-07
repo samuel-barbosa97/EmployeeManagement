@@ -34,7 +34,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public EmployeeEntity updateEmployee(EmployeeEntity employeeEntity) {
-        return null;
+        return repository.save(employeeEntity);
     }
 
     @Override
